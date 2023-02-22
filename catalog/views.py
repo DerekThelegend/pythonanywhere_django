@@ -33,3 +33,9 @@ class BookListView(LoginRequiredMixin, generic.ListView):
 
 class BookDetailView(LoginRequiredMixin, generic.DetailView):
     model = Book
+
+class AuthorListView(LoginRequiredMixin, generic.ListView):
+    model = Author
+
+class AuthorDetailView(LoginRequiredMixin, generic.DetailView):
+    model = Author
